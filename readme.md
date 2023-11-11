@@ -1,2 +1,1 @@
-# Back end code of Abuse Click
-
+# code of Abuse Click
