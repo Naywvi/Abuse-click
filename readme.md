@@ -1,1 +1,1 @@
-# code of Abuse Click
+# code of conduct Abuse Click
