@@ -1,3 +1,0 @@
-function popup() {
-  return "popup";
-}
