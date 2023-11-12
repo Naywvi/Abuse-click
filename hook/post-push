@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Exécute ESLint sur les fichiers à pousser
+echo "Check js files with ESLint..."
+git diff --cached --name-only --diff-filter=ACM | grep -E '\.jsx?$' | xargs npx eslint
+
+# Si ESLint a renvoyé des erreurs, cela empêche le push !! 
+if [ $? -ne 0 ]; then
+    echo "ESLint check failed. Please fix the issues before pushing."
+    exit 1
+fi
+
+# Si tout s'est bien passé, cela autorisera le push
+echo "ESLint check passed. Push allowed."
+exit 0
