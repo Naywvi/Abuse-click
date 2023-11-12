@@ -1,2 +1,5 @@
-Hello Api.js
-<<<<<<<<<<<<<<<<<<<<<<<<<<
+require("popup.js");
+function api() {
+  return popup();
+}
+alert(api());
