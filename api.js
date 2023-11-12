@@ -1,1 +1,3 @@
-console.log("api.js");
+function apif() {
+  console.log("api is running");
+}
